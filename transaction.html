@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactions - AI-Powered Smart Student Wallet</title>
+    <link href="globals.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Main Container for the Transactions Page -->
+    <div class="transactions-container">
+        
+        <!-- Filter Section -->
+        <section id="filters" class="filters">
+            <h2>Filter Transactions</h2>
+            <div class="filter-options">
+                <label for="category">Category:</label>
+                <select id="category" name="category">
+                    <option value="">Select Category</option>
+                    <option value="food">Food</option>
+                    <option value="travel">Travel</option>
+                    <option value="shopping">Shopping</option>
+                    <option value="entertainment">Entertainment</option>
+                </select>
+
+                <label for="date">Date Range:</label>
+                <input type="date" id="start-date" name="start-date">
+                <input type="date" id="end-date" name="end-date">
+
+                <label for="merchant">Merchant:</label>
+                <input type="text" id="merchant" placeholder="Enter Merchant Name">
+
+                <button type="button" class="cta-button">Apply Filters</button>
+            </div>
+        </section>
+
+        <!-- Detailed Transaction List -->
+        <section id="transaction-list" class="transaction-list">
+            <h2>Transaction History</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Merchant</th>
+                        <th>Category</th>
+                        <th>Amount</th>
+                        <th>AI Insights</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01/02/2025</td>
+                        <td>Amazon</td>
+                        <td>Shopping</td>
+                        <td>₹500</td>
+                        <td>No unusual activity detected.</td>
+                    </tr>
+                    <tr>
+                        <td>02/02/2025</td>
+                        <td>Domino's</td>
+                        <td>Food</td>
+                        <td>₹700</td>
+                        <td>No unusual activity detected.</td>
+                    </tr>
+                    <tr>
+                        <td>03/02/2025</td>
+                        <td>Uber</td>
+                        <td>Travel</td>
+                        <td>₹150</td>
+                        <td>No unusual activity detected.</td>
+                    </tr>
+                    <tr>
+                        <td>04/02/2025</td>
+                        <td>Flipkart</td>
+                        <td>Shopping</td>
+                        <td>₹5000</td>
+                        <td><strong>AI Alert:</strong> "Unusual spending detected! You usually spend ₹500 on shopping but just spent ₹5,000."</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- AI Fraud Alerts Section -->
+        <section id="ai-fraud-alerts" class="ai-fraud-alerts">
+            <h2>AI Fraud Alerts</h2>
+            <div class="alert-box">
+                <p><strong>Alert:</strong> Unusual spending detected! You usually spend ₹500 on food but just spent ₹5,000 at a restaurant. Please review this transaction.</p>
+            </div>
+        </section>
+
+        <!-- Download Expense Report Section -->
+        <section id="download-report" class="download-report">
+            <h2>Download Your Expense Report</h2>
+            <p>Download your transaction history as a PDF or CSV file.</p>
+            <div class="download-buttons">
+                <button class="cta-button" id="download-pdf">Download PDF</button>
+                <button class="cta-button" id="download-csv">Download CSV</button>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
