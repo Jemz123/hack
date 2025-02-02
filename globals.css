@@ -778,3 +778,35 @@ h2 {
 .user-actions {
     margin-bottom: 20px;
 }
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.logo {
+    flex-grow: 1;  /* Makes the logo area expand */
+    display: flex;
+    justify-content: flex-start;  /* Aligns the logo to the left */
+}
+/* Position nav-links at the right */
+.nav-links {
+    display: flex;
+    gap: 20px; /* Space between the buttons */
+    justify-content: flex-end;  /* Aligns the navigation buttons to the right */
+}
+
+/* Styling for nav buttons */
+.nav-button {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;  /* Change color to match your design */
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #ddd; /* Hover effect */
+}
